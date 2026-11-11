@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Douane Temporelle</string>
+
+    <string name="titre_formulaire">DOUANE TEMPORELLE</string>
+    <string name="sous_titre_formulaire">Formulaire d\'enregistrement du voyageur</string>
+    <string name="label_nom">Nom du voyageur</string>
+    <string name="hint_nom">Ex : Ahmed Ahmed</string>
+    <string name="label_naissance">Année de naissance</string>
+    <string name="hint_naissance">Ex : 2005</string>
+    <string name="label_destination">Année de destination</string>
+    <string name="hint_destination">Ex : 2050</string>
+    <string name="label_motif">Motif du voyage</string>
+    <string name="motif_tourisme">Tourisme</string>
+    <string name="motif_modification">Modification du passé</string>
+    <string name="motif_fuite">Fuite</string>
+    <string name="bouton_inspecter">Inspecter le profil</string>
+
+    <string name="erreur_nom_vide">Le nom du voyageur est obligatoire</string>
+    <string name="erreur_naissance_vide">Saisissez une année de naissance</string>
+    <string name="erreur_destination_vide">Saisissez une année de destination</string>
+
+    <string name="titre_passeport">PASSEPORT TEMPOREL</string>
+    <string name="sous_titre_passeport">Poste de douane — Division Paradoxes</string>
+    <string name="label_passeport_nom">NOM DU VOYAGEUR</string>
+    <string name="label_passeport_age">ÂGE TEMPOREL</string>
+    <string name="label_passeport_trajet">TRAJET (NAISSANCE → DESTINATION)</string>
+    <string name="label_passeport_motif">MOTIF DU VOYAGE</string>
+    <string name="valeur_trajet">%1$d → %2$d</string>
+    <string name="valeur_age">%1$d ans</string>
+    <string name="valeur_age_negatif">Pas encore né(e) (%1$d ans)</string>
+    <string name="avertissement_paradoxe">⚠ Écart de %1$d ans : nombre premier. Modifier le passé créerait un paradoxe certain.</string>
+    <string name="bouton_approuver">Approuver le saut temporel</string>
+    <string name="bouton_refuser">Refuser (Risque de paradoxe)</string>
+    <string name="description_emblem">Emblème du poste de douane temporelle</string>
+
+    <string name="symbole_approuve">✓</string>
+    <string name="symbole_refuse">✗</string>
+    <string name="message_approuve">Bon voyage %1$s</string>
+    <string name="message_refuse">%1$s est en état d\'arrestation temporelle</string>
+    <string name="detail_approuve">Le saut temporel est autorisé. Que le temps vous soit clément.</string>
+    <string name="detail_refuse">Saut refusé : risque de paradoxe. Direction le Tribunal Temporel.</string>
+    <string name="bouton_nouveau">Nouveau voyageur</string>
+
+    <string name="voyageur_inconnu">Voyageur inconnu</string>
+</resources>

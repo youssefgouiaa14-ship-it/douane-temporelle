@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_racine_resultat_yg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vert_approuve"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/txt_symbole_yg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="110sp"
+        android:textStyle="bold"
+        tools:text="✓" />
+
+    <TextView
+        android:id="@+id/txt_message_yg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        tools:text="Bon voyage Marty" />
+
+    <TextView
+        android:id="@+id/txt_detail_yg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        tools:text="Le saut temporel est autorisé." />
+
+    <Button
+        android:id="@+id/btn_nouveau_yg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:minHeight="56dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:text="@string/bouton_nouveau"
+        android:textAllCaps="false"
+        android:textColor="@color/encre"
+        android:textSize="16sp"
+        app:backgroundTint="@color/white" />
+</LinearLayout>

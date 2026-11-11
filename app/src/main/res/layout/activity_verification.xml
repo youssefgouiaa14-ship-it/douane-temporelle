@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_racine_verification_yg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bleu_nuit"
+    android:fitsSystemWindows="true"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/img_emblem_yg"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:contentDescription="@string/description_emblem"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_emblem_temps" />
+
+    <RelativeLayout
+        android:id="@+id/rel_page_passeport_yg"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:background="@drawable/bg_passeport_page"
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/txt_titre_passeport_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/titre_passeport"
+            android:textColor="@color/bleu_nuit"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_sous_titre_passeport_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_titre_passeport_yg"
+            android:gravity="center"
+            android:text="@string/sous_titre_passeport"
+            android:textColor="@color/encre_claire"
+            android:textSize="11sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/lbl_nom_passeport_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_sous_titre_passeport_yg"
+            android:layout_marginTop="14dp"
+            android:text="@string/label_passeport_nom"
+            android:textColor="@color/encre_claire"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/txt_nom_passeport_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbl_nom_passeport_yg"
+            android:fontFamily="monospace"
+            android:textColor="@color/encre"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Marty McFly" />
+
+        <TextView
+            android:id="@+id/lbl_age_passeport_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_nom_passeport_yg"
+            android:layout_marginTop="10dp"
+            android:text="@string/label_passeport_age"
+            android:textColor="@color/encre_claire"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/txt_age_passeport_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbl_age_passeport_yg"
+            android:fontFamily="monospace"
+            android:textColor="@color/encre"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="60 ans" />
+
+        <TextView
+            android:id="@+id/lbl_trajet_passeport_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_age_passeport_yg"
+            android:layout_marginTop="10dp"
+            android:text="@string/label_passeport_trajet"
+            android:textColor="@color/encre_claire"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/txt_trajet_passeport_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbl_trajet_passeport_yg"
+            android:fontFamily="monospace"
+            android:textColor="@color/encre"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="1990 → 2050" />
+
+        <TextView
+            android:id="@+id/lbl_motif_passeport_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_trajet_passeport_yg"
+            android:layout_marginTop="10dp"
+            android:text="@string/label_passeport_motif"
+            android:textColor="@color/encre_claire"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/txt_motif_passeport_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbl_motif_passeport_yg"
+            android:fontFamily="monospace"
+            android:textColor="@color/encre"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Tourisme" />
+
+        <TextView
+            android:id="@+id/txt_avertissement_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_motif_passeport_yg"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/rouge_refuse"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:text="⚠ Écart de 59 ans : nombre premier."
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_refuser_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:minHeight="48dp"
+            android:text="@string/bouton_refuser"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:backgroundTint="@color/rouge_refuse" />
+
+        <Button
+            android:id="@+id/btn_approuver_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_refuser_yg"
+            android:layout_marginBottom="6dp"
+            android:minHeight="48dp"
+            android:text="@string/bouton_approuver"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:backgroundTint="@color/selector_btn_approuver" />
+
+        <TextView
+            android:id="@+id/txt_mrz_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_approuver_yg"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="monospace"
+            android:textColor="@color/encre"
+            android:textSize="9sp"
+            tools:text="P&lt;TMP&lt;MARTY&lt;MCFLY&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;\n1990&lt;2050&lt;060&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;" />
+    </RelativeLayout>
+</LinearLayout>

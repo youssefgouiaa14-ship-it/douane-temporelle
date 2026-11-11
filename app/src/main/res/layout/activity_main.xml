@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_racine_yg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/parchemin"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/layout_formulaire_yg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txt_titre_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:letterSpacing="0.08"
+            android:text="@string/titre_formulaire"
+            android:textColor="@color/bleu_nuit"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_sous_titre_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="@string/sous_titre_formulaire"
+            android:textColor="@color/encre_claire"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/lbl_nom_yg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/label_nom"
+            android:textColor="@color/encre"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_nom_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_nom"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName|textCapWords"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            android:textColor="@color/encre"
+            android:textColorHint="@color/encre_claire" />
+
+        <TextView
+            android:id="@+id/lbl_naissance_yg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_naissance"
+            android:textColor="@color/encre"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_naissance_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_naissance"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="4"
+            android:minHeight="48dp"
+            android:textColor="@color/encre"
+            android:textColorHint="@color/encre_claire" />
+
+        <TextView
+            android:id="@+id/lbl_destination_yg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_destination"
+            android:textColor="@color/encre"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_destination_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_destination"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="4"
+            android:minHeight="48dp"
+            android:textColor="@color/encre"
+            android:textColorHint="@color/encre_claire" />
+
+        <TextView
+            android:id="@+id/lbl_motif_yg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_motif"
+            android:textColor="@color/encre"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg_motif_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_tourisme_yg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:minHeight="48dp"
+                android:text="@string/motif_tourisme"
+                android:textColor="@color/encre"
+                app:buttonTint="@color/bleu_nuit" />
+
+            <RadioButton
+                android:id="@+id/rb_modification_yg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/motif_modification"
+                android:textColor="@color/encre"
+                app:buttonTint="@color/bleu_nuit" />
+
+            <RadioButton
+                android:id="@+id/rb_fuite_yg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/motif_fuite"
+                android:textColor="@color/encre"
+                app:buttonTint="@color/bleu_nuit" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_inspecter_yg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:minHeight="56dp"
+            android:text="@string/bouton_inspecter"
+            android:textAllCaps="false"
+            android:textColor="@color/or_passeport"
+            android:textSize="16sp"
+            app:backgroundTint="@color/bleu_nuit" />
+    </LinearLayout>
+</ScrollView>
